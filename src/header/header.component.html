@@ -1,0 +1,64 @@
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=shadow-multiple">
+
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap" rel="stylesheet">
+
+<div class="page-header">
+  <!-- notifications -->
+  <div id="popUp">
+    <div id="close" class="close"><i class="fa fa-times"></i></div>
+    <div id="new"><span>NEW!</span></div>
+
+    <div *ngFor="let not of notifications">
+      <h2>
+        {{ not?.notification }}
+        <a target="_blank" class="button" (click)="goToLoginPage()"><i class="fas fa-hand-point-right"></i></a>
+      </h2>
+    </div>
+    <br />
+  </div>
+  <div id="plus">
+    <span (click)="getNotifications()">NEW<br />&nbsp;&nbsp;<i class="fa fa-plus"></i></span>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="page-caption">
+          <h3 class="page-title ">
+
+            <span style="color: #eddcd2;font-family: 'Josefin Sans', 
+                  sans-serif;border:7px solid #fca311;
+                  padding-top:50px;padding-bottom: 50px;padding-left: 10px;padding-right: 10px;
+                  ">
+
+
+              <i class="fas fa-laptop-code  text-center pt-1" style="color:#fff3b0;;"></i>
+              Coding is FUN</span>
+          </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.page-header-->
+<!-- news -->
+<div class="card-section">
+  <div class="container">
+    <div class="card-block bg-white mb30">
+      <div class="row">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+          <!-- section-title -->
+          <div class="section-title mb-0 text-center">
+            <h2 style="color:#00296B;" class="font-effect-shadow-multiple">"All the world is a laboratory to the
+              inquiring mind"</h2>
+            <p style="color:#457b9d;font-family: 'Josefin Sans', sans-serif;">
+              Our approach is very simple: we define your problem and give the
+              best solution.
+            </p>
+          </div>
+          <!-- /.section-title -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

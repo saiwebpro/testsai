@@ -1,0 +1,37 @@
+<!-- <p class="display-4 text-center mt-4 mb-0" style="color:#E36414;font-family: 'Josefin Sans', sans-serif;">Courses</p>
+<hr>
+<div class="cardList container mb-5 mt-2"> -->
+
+  <!-- <hr> -->
+  <!-- <ng-container *ngFor="let courseObj of allCourses">
+
+    <app-coursecard class="cardListItem" [courseObj]=courseObj></app-coursecard>
+  </ng-container> -->
+
+  
+  <!-- <div class="card-deck">
+    <app-coursecard class="cardListItem" *ngFor="let courseObj of allCourses" [courseObj]=courseObj></app-coursecard>
+  </div> -->
+
+
+<!-- </div> -->
+
+
+
+
+<p class="display-4 text-center mt-4 mb-0" style="color:#E36414;font-family: 'Josefin Sans', sans-serif;">Courses</p>
+<hr>
+
+<div class="container ">
+	
+	<div class="card-deck " style="justify-content: center;">
+    <ng-container *ngFor="let courseObj of allCourses" class="my-3 ">
+
+      <app-coursecard class="cardListItem mt-2 " [courseObj]=courseObj></app-coursecard>
+    </ng-container>
+		
+		
+		
+		
+	</div>
+</div>

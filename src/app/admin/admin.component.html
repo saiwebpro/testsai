@@ -1,0 +1,70 @@
+<div class="container " style="margin-top: 100px;">
+
+  <div class="row">
+    <div class="col-sm-3 ">
+      <div class="dropdown sidebar sidebar-md">
+        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown"
+          (click)="toggleStatus()" aria-haspopup="true" aria-expanded="true">
+          {{status?"Show menu":"Hide menu"}}
+          <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu text-center " aria-labelledby="dropdownMenu1">
+
+          <li >
+            <a routerLink="registered-students" routerLinkActive="active">
+              <i class="fas fa-users mr-2"></i>
+              Registered students
+            </a>
+          </li>
+
+
+          <li >
+            <a routerLink="newcourse" routerLinkActive="active">
+              <i class="fas fa-plus mr-2"></i>
+              Add new course
+            </a>
+          </li>
+
+
+          <li>
+            <a routerLink="viewarticle" routerLinkActive="active">
+              <i class="fas fa-eye mr-2"></i>
+              View Articles
+            </a>
+          </li>
+
+
+          <li>
+            <a routerLink="writearticle" routerLinkActive="active">
+              <i class="far fa-newspaper mr-2"></i>
+              Add new article
+            </a>
+          </li>
+
+          <li>
+            <a routerLink="notifications">
+              <i class="far fa-newspaper mr-2"></i>
+              Notifications
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-sm-9 mt-2">
+      <router-outlet></router-outlet>
+
+      <button class="btn  btn-outline-danger float-right ml-2" (click)="adminLogout()">Logout</button>
+
+    </div>
+  </div>
+
+
+  <div class="container-fluid mt-3">
+
+    <!--  <h1>Simple Sidebar</h1>
+        <p>This template has a responsive menu toggling system. The menu will appear collapsed on smaller screens, and will appear non-collapsed on larger screens. When toggled using the button below, the menu will appear/disappear. On small screens, the page content will be pushed off canvas.</p>
+        <p>Make sure to keep all page content within the <code>#page-content-wrapper</code>.</p> -->
+  </div>
+</div>
